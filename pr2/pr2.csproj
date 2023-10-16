@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="disk23.ICO" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib_13\Lib_13.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Lib_13">
+      <HintPath>C:\Users\ИСП-31\source\repos\Lib_13\Lib_13\bin\Debug\net6.0\Lib_13.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="disk23.ICO" />
+  </ItemGroup>
+
+</Project>
