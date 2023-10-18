@@ -35,6 +35,8 @@
         <Button x:Name="Randombtn" Grid.Column="1" Content="Рандомно заполнить" HorizontalAlignment="Center" Height="42" VerticalAlignment="Top" Width="168" Grid.Row="1" Click="RandomCLick"/>
         <Label Grid.Column="1" Content="Значение" HorizontalAlignment="Center" Margin="0,36,0,0" Grid.Row="2" VerticalAlignment="Top" Width="168"/>
         <Label Grid.Column="2" Content="Ответ" HorizontalAlignment="Center" Margin="0,36,0,0" Grid.Row="2" VerticalAlignment="Top" Width="169"/>
+        <Button x:Name="Save" Grid.Column="3" Content="Сохранить" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="168" Click="SaveClick" Margin="14,97,0,0"/>
+        <Button IsEnabled="False" x:Name="Open" Grid.Column="3" Content="Открыть" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="168" Click="OpenClick" Margin="14,25,0,0"/>
 
     </Grid>
 </Window>

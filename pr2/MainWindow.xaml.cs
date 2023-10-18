@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Lib_13;
+using LibMas;
 
 namespace pr2
 {
@@ -88,6 +89,24 @@ namespace pr2
             Classpr2.ProizvLb(mas, out pr);//вызываем функцию из библиотеки
             if(listbox.Items.Count!=0)
             tbRez.Text = Convert.ToString(pr);//выводим в текстбокс результат
+        }
+
+        private void SaveClick(object sender, RoutedEventArgs e)
+        {
+            int[] mas = new Int32[listbox.Items.Count];//создаём массив, в который запихнём листбокс
+            for (int j = 0; j < listbox.Items.Count; j++)//цикл для записи листбокса в массив
+            {
+                mas[j] = Convert.ToInt32(listbox.Items[j]);
+            }
+            Massiv.SaveMas(mas);
+            Open.IsEnabled = true;
+        }
+
+        private void OpenClick(object sender, RoutedEventArgs e)
+        {
+            int[] mas;//создаём массив, в который запихнём листбокс
+            Massiv.OpenMas(out mas);
+            for(int i = 0; i < mas.Length; i++) { listbox.Items.Add(mas[i]);}
         }
     }
 }
