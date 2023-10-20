@@ -86,7 +86,7 @@ namespace pr2
             {
                 mas[j] = Convert.ToInt32(listbox.Items[j]);
             }
-            Classpr2.ProizvLb(mas, out pr);//вызываем функцию из библиотеки
+            pr = Classpr2.ProizvLb(mas);//вызываем функцию из библиотеки
             if(listbox.Items.Count!=0)
             tbRez.Text = Convert.ToString(pr);//выводим в текстбокс результат
         }
