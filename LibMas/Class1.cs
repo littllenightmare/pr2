@@ -69,7 +69,8 @@
             StreamWriter sw = new StreamWriter("Матрица.txt");
             int rows = matr.GetLength(0);
             int columns = matr.GetLength (1);
-            sw.WriteLine($"{rows}{columns}");
+            sw.WriteLine($"{rows}");
+            sw.WriteLine($"{columns}");
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
