@@ -93,9 +93,10 @@
             matr = new int[rows,columns];
             for (int i = 0; i < rows; i++)
             {
+                string[] line = sr.ReadLine().Split(' ');
                 for (int j = 0; j < columns; j++)
                 {
-                    matr[i,j] = Convert.ToInt32(sr.Read());
+                    matr[i, j] = int.Parse(line[j]);
                 }
             }
             sr.Close();
